@@ -9,5 +9,6 @@ def post_lists(request):
     {'name': 'Утро', 'text': 'Доброе утро'},
     {'name': 'День', 'text': 'Добрый день'},
     {'name': 'Вечер', 'text': 'Добрый вечер'},
+    {'name': 'Ночь', 'text': 'Добрый ночь'},
 ]
     return render(request,'blog/index.html',context={'posts':posts})
