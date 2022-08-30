@@ -1,0 +1,20 @@
+{% extends 'blog/base_blog.html' %}
+
+{% block title %}
+home
+{% endblock %}
+
+{% block content %}
+<ul>
+{% for post in posts %}
+<li>
+  <h1>
+  {{post.name}}
+  </h1>
+  {{post.text}}
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
+
+
