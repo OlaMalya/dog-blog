@@ -1,15 +1,11 @@
 {% extends 'blog/base_blog.html' %}
-
 {% block title %}
-home
+{{post.title}}
 {% endblock %}
 
 {% block content %}
-<article class="">
-  {% for post in posts %}
-  {% include 'blog/includes/card_template.html' %}
-    {% endfor %}
-</article>
-{% endblock %}
 
+  {% include 'blog/includes/card_template.html' %}
+
+{% endblock %}
 
